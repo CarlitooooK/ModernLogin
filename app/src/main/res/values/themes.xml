@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CreamLogin" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/accent_color</item>
+    </style>
+
+    <style name="Theme.CreamLogin" parent="Base.Theme.CreamLogin" />
+</resources>
