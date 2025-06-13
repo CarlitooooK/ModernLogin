@@ -15,21 +15,20 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewPager22: ViewPager2
     private lateinit var indicator: CircleIndicator3
     private lateinit var btnSignUp:Button
-    private lateinit var createAccTV:TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        createAccTV = findViewById(R.id.tvCreateAccount)
         btnSignUp = findViewById(R.id.btnSignIn)
 
 
         val pages = listOf(
-            PageItem(R.drawable.image1, "Start a new social adventure."),
-            PageItem(R.drawable.image2, "Connect with people nearby."),
-            PageItem(R.drawable.image3, "Join events and communities.")
+            PageItem(R.drawable.image1, "\"El cine no es un espejo para reflejar la realidad, sino un martillo para darle forma.\""),
+            PageItem(R.drawable.image2, "\"Cada historia proyectada es una chispa capaz de encender mil mundos en la mente del espectador.\""),
+            PageItem(R.drawable.image3, "\"Donde termina el lenguaje, comienza la imagen... y con ella, la emoción que transforma.\"")
         )
 
 
@@ -56,16 +55,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,LoginActivity::class.java))
         }
 
-        findViewById<TextView>(R.id.tvCreateAccount).setOnClickListener {
-            startActivity(Intent(this,SignUpActivity::class.java))
-        }
 
 
     }
-
-
-
-
-
 
 }
