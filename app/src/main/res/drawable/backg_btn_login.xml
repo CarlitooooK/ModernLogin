@@ -7,7 +7,7 @@
     </corners>
 
     <solid
-        android:color="@color/btn_login_color">
+        android:color="@color/accent_color">
     </solid>
 
 

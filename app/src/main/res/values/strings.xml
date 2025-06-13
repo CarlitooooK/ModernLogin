@@ -16,6 +16,19 @@
     <string name="start_a_new_social_adventure">Start a new social adventure.</string>
     <string name="sign_in_btn">Sign in</string>
     <string name="or_create_account">Or Create Account →</string>
-    <string name="texts_welcome">Get involved with people and events\naround you</string>
+    <string name="texts_welcome">Cortos, animación y cine que inspira. Explora y disfruta.u</string>
     <string name="create">Or Create Account →</string>
+    <string name="autor">Autor :</string>
+    <string name="lorem_ipsum"> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Ha sido el estándar desde el año 1500, cuando un impresor desconocido usó una galería de textos y los mezcló para crear un libro especimen. Sobrevivió 500 años e ingresó a documentos electrónicos. Fue popularizado en los 60s con Letraset y más tarde con software de autoedición como Aldus PageMaker.</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="titulo_bonito_aqu">Titulo Bonito Aquí</string>
+    <string name="etiqueta">Etiqueta</string>
+    <string name="imagen">Imagen</string>
+    <string name="ficcion">Ficcion</string>
+    <string name="no_ficcion">No Ficcion</string>
+    <string name="experimental">Experimental</string>
+    <string name="duracion_larga">Duracion Larga</string>
+    <string name="duracion_corta">Duracion Corta</string>
+    <string name="duracion_media">Duracion Media</string>
+    <string name="buscar_multimedia">Buscar Multimedia</string>
 </resources>

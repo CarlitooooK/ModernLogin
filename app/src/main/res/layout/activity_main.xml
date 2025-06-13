@@ -26,9 +26,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="20dp"/>
 
-
-
-
     <LinearLayout
         android:id="@+id/bottomLayout"
         android:orientation="vertical"
@@ -44,12 +41,12 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="40dp"
             android:layout_marginBottom="-23dp"
-            android:backgroundTint="@color/secondary_color">
+            android:backgroundTint="@color/white">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/text_color"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:fontFamily="@font/merriweathersubtitle"
                 android:layout_marginTop="30dp"
@@ -71,7 +68,7 @@
                 android:text="@string/sign_up"
                 android:textAllCaps="false"
                 android:background="@drawable/backg_btn_login"
-                android:textColor="@color/subtitle_color"
+                android:textColor="@color/white"
                 android:textStyle="bold">
             </Button>
 

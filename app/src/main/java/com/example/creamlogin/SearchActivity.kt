@@ -45,7 +45,6 @@ class SearchActivity:AppCompatActivity() {
         closeButton.setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_IN)
 
 // Forzar que no esté iconificado (expandido)
-        searchView.isIconified = false
         searchView.setIconifiedByDefault(false)
 
         try {
