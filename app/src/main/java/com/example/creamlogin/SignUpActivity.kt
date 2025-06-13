@@ -8,6 +8,6 @@ class SignUpActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_create_account)
+        setContentView(R.layout.activity_form)
     }
 }

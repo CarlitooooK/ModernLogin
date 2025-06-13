@@ -16,12 +16,6 @@
     <string name="start_a_new_social_adventure">Start a new social adventure.</string>
     <string name="sign_in_btn">Sign in</string>
     <string name="or_create_account">Or Create Account →</string>
-    <string name="texts_welcome"> Cortos, animación y cine que inspira. Explora y disfruta.</string>
+    <string name="texts_welcome">Get involved with people and events\naround you</string>
     <string name="create">Or Create Account →</string>
-    <string name="ficcion">Ficcion</string>
-    <string name="no_ficcion">No Ficcion</string>
-    <string name="experimental">Experimental</string>
-    <string name="duracion_larga">Duracion Larga</string>
-    <string name="duracion_corta">Duracion Corta</string>
-    <string name="duracion_media">Duracion Media</string>
 </resources>
