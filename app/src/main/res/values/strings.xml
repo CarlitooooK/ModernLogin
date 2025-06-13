@@ -23,4 +23,5 @@
     <string name="nombre_completo">Nombre Completo</string>
     <string name="titulo_bonito_aqu">Titulo Bonito Aquí</string>
     <string name="etiqueta">Etiqueta</string>
+    <string name="imagen">Imagen</string>
 </resources>

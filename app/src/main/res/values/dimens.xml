@@ -15,5 +15,7 @@
     <dimen name="anchoImagen">220dp</dimen>
     <dimen name="largoImagen">280dp</dimen>
     <dimen name="largoCard">522dp</dimen>
+    <dimen name="buttom_width">320dp</dimen>
+    <dimen name="ediText_height">58dp</dimen>
 
 </resources>

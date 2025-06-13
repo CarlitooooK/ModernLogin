@@ -45,7 +45,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/secondary_color"
                 android:textSize="@dimen/mediumText"
                 android:textStyle="bold"
                 android:text="@string/autor"
@@ -75,7 +75,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@id/contenedor"
             android:layout_margin="@dimen/littleSpace"
-            android:backgroundTint="@color/secondary_color"
+            android:backgroundTint="@color/text_color"
             app:cardCornerRadius="@dimen/littleSpace"
             app:cardElevation="@dimen/appElevation">
 
@@ -115,6 +115,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/card_view"
         android:background="@color/black"
-        android:layout_marginBottom="@dimen/littleSpace"/>
+        android:layout_marginBottom="@dimen/littleSpace"
+        android:contentDescription="@string/imagen"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
