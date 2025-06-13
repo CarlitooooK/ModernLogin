@@ -18,4 +18,6 @@
     <dimen name="buttom_width">320dp</dimen>
     <dimen name="ediText_height">58dp</dimen>
 
+    <dimen name="hola">58dp</dimen>
+
 </resources>
