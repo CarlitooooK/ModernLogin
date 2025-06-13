@@ -18,4 +18,9 @@
     <string name="or_create_account">Or Create Account →</string>
     <string name="texts_welcome">Get involved with people and events\naround you</string>
     <string name="create">Or Create Account →</string>
+    <string name="autor">Autor :</string>
+    <string name="lorem_ipsum"> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Ha sido el estándar desde el año 1500, cuando un impresor desconocido usó una galería de textos y los mezcló para crear un libro especimen. Sobrevivió 500 años e ingresó a documentos electrónicos. Fue popularizado en los 60s con Letraset y más tarde con software de autoedición como Aldus PageMaker.</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="titulo_bonito_aqu">Titulo Bonito Aquí</string>
+    <string name="etiqueta">Etiqueta</string>
 </resources>

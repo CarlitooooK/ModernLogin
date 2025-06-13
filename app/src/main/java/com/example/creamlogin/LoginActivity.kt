@@ -1,6 +1,5 @@
 package com.example.creamlogin
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
@@ -12,7 +11,7 @@ class LoginActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_detail)
 
 
         backIcon = findViewById(R.id.backIconLogin)

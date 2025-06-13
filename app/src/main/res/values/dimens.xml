@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tittle">32sp</dimen>
+    <dimen name="smallText">16sp</dimen>
+    <dimen name="mediumText">22sp</dimen>
+    <dimen name="largeText">36sp</dimen>
+    <dimen name="sinopsis">20sp</dimen>
+
+    <dimen name="littleSpace">16dp</dimen>
+    <dimen name="mediumSpace">24dp</dimen>
+    <dimen name="bigSpace">48dp</dimen>
+    <dimen name="corners">54dp</dimen>
+    <dimen name="appElevation">4dp</dimen>
+    <dimen name="paddingEtiqueta">12dp</dimen>
+    <dimen name="anchoImagen">220dp</dimen>
+    <dimen name="largoImagen">280dp</dimen>
+    <dimen name="largoCard">522dp</dimen>
+
+</resources>
