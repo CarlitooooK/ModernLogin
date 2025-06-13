@@ -3,7 +3,6 @@ package com.example.creamlogin
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
@@ -52,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         // Botones
         findViewById<Button>(R.id.btnSignIn).setOnClickListener {
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this,SearchActivity::class.java))
         }
 
 
