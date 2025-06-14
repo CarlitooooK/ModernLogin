@@ -4,7 +4,9 @@ import com.google.gson.annotations.SerializedName
 
 data class Corto(
     @SerializedName("titulo_original") val tituloOriginal: String?,
-    @SerializedName("descripcion") val descripcion: String?, // si no hay campo 'descripcion', puedes usar sinopsis
+    @SerializedName("clasificacion") val clasificacion: String?, // si no hay campo 'descripcion', puedes usar sinopsis
     @SerializedName("genero") val genero: String?,
-    @SerializedName("sinopsis") val sinopsis: String?
+    @SerializedName("sinopsis") val sinopsis: String?,
+    @SerializedName("basado_en ") val basadoEn: String?,
+    @SerializedName("duracion") val duracion: String?
 )

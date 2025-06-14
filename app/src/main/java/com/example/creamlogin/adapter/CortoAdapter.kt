@@ -14,9 +14,11 @@ class CortoAdapter(private var lista: List<Corto>) : RecyclerView.Adapter<CortoA
 
     class CortoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val txtTitulo: TextView = itemView.findViewById(R.id.txtTitulo)
-        val txtDescripcion: TextView = itemView.findViewById(R.id.txtDescripcion)
+        val txtClasificacion: TextView = itemView.findViewById(R.id.txtClasifiacion)
         val txtGenero: TextView = itemView.findViewById(R.id.txtGenero)
         val txtSinopsis: TextView = itemView.findViewById(R.id.txtSinopsis)
+        val txtDuracion: TextView = itemView.findViewById(R.id.txtDuracion)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CortoViewHolder {
@@ -28,9 +30,11 @@ class CortoAdapter(private var lista: List<Corto>) : RecyclerView.Adapter<CortoA
     override fun onBindViewHolder(holder: CortoViewHolder, position: Int) {
         val item = lista[position]
         holder.txtTitulo.text = item.tituloOriginal ?: "Sin título"
-        holder.txtDescripcion.text = item.descripcion ?: "Sin descripción"
+        holder.txtClasificacion.text = item.clasificacion ?: "Sin Clasificación"
         holder.txtGenero.text = "Género: ${item.genero ?: "No definido"}"
         holder.txtSinopsis.text = item.sinopsis ?: "Sin sinopsis"
+        holder.txtDuracion.text = "Duración: ${item.duracion ?: "No disponible"}"
+
     }
 
     override fun getItemCount(): Int = lista.size

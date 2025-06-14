@@ -13,7 +13,7 @@ interface SupabaseService {
     )
     @GET("rest/v1/acervo")
     suspend fun getCortos(
-        @Query("select") select: String = "titulo_original,sinopsis,genero,basado_en"
+        @Query("select") select: String = "titulo_original,sinopsis,genero,basado_en,clasificacion,duracion"
     ): List<Corto>
 
 }

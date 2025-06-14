@@ -15,11 +15,12 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/txtDescripcion"
+        android:id="@+id/txtClasifiacion"
         android:textColor="#cccccc"
         android:textSize="14sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 
     <TextView
         android:id="@+id/txtGenero"
@@ -37,4 +38,10 @@
         android:maxLines="5"
         android:ellipsize="end" />
 
+    <TextView
+        android:id="@+id/txtDuracion"
+        android:textColor="#cccccc"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
