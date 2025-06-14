@@ -50,6 +50,7 @@
             android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@id/contenedor"
             android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
             android:layout_marginTop="@dimen/mediumSpace">
 
             <TextView
