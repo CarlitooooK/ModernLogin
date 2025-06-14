@@ -1,6 +1,6 @@
 package com.example.creamlogin.interfac
 
-import com.example.creamlogin.models.Titulo
+import com.example.creamlogin.models.Corto
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.Query
@@ -12,7 +12,8 @@ interface SupabaseService {
         "Content-Type: application/json"
     )
     @GET("rest/v1/acervo")
-    suspend fun getTitulos(
-        @Query("select") select: String = "titulo_original"
-    ): List<Titulo>
+    suspend fun getCortos(
+        @Query("select") select: String = "titulo_original,sinopsis,genero,basado_en"
+    ): List<Corto>
+
 }

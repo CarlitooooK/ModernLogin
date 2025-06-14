@@ -5,7 +5,6 @@ import android.annotation.SuppressLint
 import android.graphics.Color
 import android.graphics.PorterDuff
 import android.os.Bundle
-import android.util.Log
 import android.widget.EditText
 
 import android.widget.ImageView
@@ -17,18 +16,16 @@ import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.creamlogin.adapter.TituloAdapter
+import com.example.creamlogin.adapter.CortoAdapter
 import com.example.creamlogin.retrofit.RetrofitInstance
 import kotlinx.coroutines.DelicateCoroutinesApi
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 
 class SearchActivity:AppCompatActivity() {
     private lateinit var backIcon: ImageView
     private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: TituloAdapter
+    private lateinit var adapter: CortoAdapter
 
     @OptIn(DelicateCoroutinesApi::class)
     @SuppressLint("SoonBlockedPrivateApi")
@@ -50,8 +47,8 @@ class SearchActivity:AppCompatActivity() {
 
         lifecycleScope.launch {
             try {
-                val titulos = RetrofitInstance.api.getTitulos()
-                adapter = TituloAdapter(titulos)
+                val titulos = RetrofitInstance.api.getCortos()
+                adapter = CortoAdapter(titulos)
                 recyclerView.adapter = adapter
 
             } catch (e: Exception) {
