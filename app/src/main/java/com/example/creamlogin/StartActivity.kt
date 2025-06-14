@@ -51,7 +51,7 @@ class StartActivity : AppCompatActivity() {
 
         // Botones
         findViewById<Button>(R.id.btnSignIn).setOnClickListener {
-            startActivity(Intent(this,SearchActivity::class.java))
+            startActivity(Intent(this,MainActivity::class.java))
         }
 
 
