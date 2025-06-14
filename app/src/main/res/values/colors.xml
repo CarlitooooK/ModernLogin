@@ -4,7 +4,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="accent_color">#4F4F8A</color>
     <color name="secondary_color">#E6773A</color>
-    <color name="text_color">#D58947DE</color>
+    <color name="background">#f5f0e6 </color>
+    <color name="contrast_elements">#3c3c3c </color>
+    <color name="complementary_color">#a3c6be </color>
+    <color name="text_color">#E56F3BB1</color>
     <color name="subtitle_color">#FA6D6D6D</color>
     <color name="btn_login_color">#A0DBD9D9</color>
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/background_degradado">
+    android:background="@color/complementary_color">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/card_view"
@@ -97,7 +97,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/mediumText"
-                android:textColor="@color/black"
+                android:textColor="@color/background"
+                android:textStyle="bold"
                 android:text="@string/etiqueta"
                 android:paddingEnd="@dimen/paddingEtiqueta"
                 android:paddingStart="@dimen/paddingEtiqueta"

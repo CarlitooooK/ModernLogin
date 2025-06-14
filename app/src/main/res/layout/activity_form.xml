@@ -15,7 +15,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/contenedor"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="120dp"
             android:layout_marginBottom="@dimen/mediumSpace"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
                 android:layout_marginTop="@dimen/mediumSpace"
                 android:fontFamily="@font/merriweathersubtitle"
                 android:text="@string/acervo_audiovisual_arpa_buap_2024"
-                android:textColor="@color/white"
+                android:textColor="@color/background"
                 android:textSize="@dimen/tittle2"
                 android:textStyle="bold"
                 android:layout_marginStart="@dimen/margin"
@@ -145,7 +145,7 @@
                 android:text="@string/cortometraje"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:button="@drawable/shape_checkbox"
+               android:button="@drawable/shape_checkbox"
                 android:padding="10dp"
                 android:fontFamily="@font/quicksandtext"
                 android:textSize="@dimen/smallText" />
