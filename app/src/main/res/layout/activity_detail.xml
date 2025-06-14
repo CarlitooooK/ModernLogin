@@ -14,6 +14,19 @@
         android:layout_height="@dimen/largoCard"
         android:background="@drawable/background_card"
         >
+
+        <TextView
+            android:id="@+id/sinopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_sinopsis"
+            android:text="@string/sinopsis"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/mediumSpace"
+            android:fontFamily="@font/merriweathersubtitle"
+            android:textSize="@dimen/mediumText"/>
+
         <TextView
             android:id="@+id/tv_sinopsis"
             android:layout_width="wrap_content"
@@ -39,7 +52,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="@dimen/mediumSpace"
-            app:layout_constraintBottom_toTopOf="@id/tv_sinopsis"
+            app:layout_constraintBottom_toTopOf="@id/sinopsis"
             >
 
             <TextView
@@ -61,7 +74,6 @@
                 android:textSize="@dimen/mediumText"
                 android:textStyle="bold"
                 android:text="@string/nombre_completo"
-                android:layout_marginBottom="@dimen/littleSpace"
                 android:paddingStart="@dimen/littleSpace"
                 android:paddingEnd="0dp"
                 android:fontFamily="@font/merriweathersubtitle"/>
@@ -74,7 +86,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@id/contenedor"
-            android:layout_margin="@dimen/littleSpace"
+            android:layout_marginStart="@dimen/mediumSpace"
+            android:layout_marginBottom="@dimen/littleSpace"
             android:backgroundTint="@color/text_color"
             app:cardCornerRadius="@dimen/littleSpace"
             app:cardElevation="@dimen/appElevation">

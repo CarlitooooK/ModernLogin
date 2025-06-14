@@ -2,11 +2,12 @@
 <resources>
     <dimen name="tittle">32sp</dimen>
     <dimen name="smallText">16sp</dimen>
-    <dimen name="mediumText">22sp</dimen>
+    <dimen name="mediumText">20sp</dimen>
     <dimen name="largeText">36sp</dimen>
     <dimen name="sinopsis">20sp</dimen>
+    <dimen name="tittle2">26sp</dimen>
 
-    <dimen name="littleSpace">16dp</dimen>
+    <dimen name="littleSpace">10dp</dimen>
     <dimen name="mediumSpace">24dp</dimen>
     <dimen name="bigSpace">48dp</dimen>
     <dimen name="corners">54dp</dimen>
@@ -16,8 +17,7 @@
     <dimen name="largoImagen">280dp</dimen>
     <dimen name="largoCard">522dp</dimen>
     <dimen name="buttom_width">320dp</dimen>
-    <dimen name="ediText_height">58dp</dimen>
-
-    <dimen name="hola">58dp</dimen>
+    <dimen name="ediText_height">48dp</dimen>
+    <dimen name="margin">34dp</dimen>
 
 </resources>
