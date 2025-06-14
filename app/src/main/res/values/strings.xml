@@ -32,4 +32,5 @@
     <string name="duracion_media">Duracion Media</string>
     <string name="buscar_multimedia">Buscar Multimedia</string>
     <string name="t_tulo_ejemplo">Título ejemplo</string>
+    <string name="a_adir_recurso">Añadir Recurso</string>
 </resources>

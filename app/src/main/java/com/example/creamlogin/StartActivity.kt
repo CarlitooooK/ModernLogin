@@ -9,7 +9,7 @@ import androidx.viewpager2.widget.ViewPager2
 import me.relex.circleindicator.CircleIndicator3
 
 
-class MainActivity : AppCompatActivity() {
+class StartActivity : AppCompatActivity() {
 
     private lateinit var viewPager22: ViewPager2
     private lateinit var indicator: CircleIndicator3
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_start)
 
         btnSignUp = findViewById(R.id.btnSignIn)
 

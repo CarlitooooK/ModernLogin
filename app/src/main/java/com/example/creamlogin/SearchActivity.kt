@@ -51,12 +51,6 @@ class SearchActivity:AppCompatActivity() {
         lifecycleScope.launch {
             try {
                 val titulos = RetrofitInstance.api.getTitulos()
-
-                // 🔍 Imprimir los títulos en Logcat
-                titulos.forEach {
-                    Log.d("API", "→ ${it.tituloOriginal}")
-                }
-
                 adapter = TituloAdapter(titulos)
                 recyclerView.adapter = adapter
 
@@ -65,8 +59,6 @@ class SearchActivity:AppCompatActivity() {
                 e.printStackTrace()
             }
         }
-
-
 
 
 

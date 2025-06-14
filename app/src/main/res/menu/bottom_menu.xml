@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search"
+        android:title="@string/buscar_multimedia"
+        android:icon="@drawable/ic_search"/>
+
+    <item
+        android:id="@+id/add"
+        android:title="@string/a_adir_recurso"
+        android:icon="@drawable/ic_add"/>
+
+</menu>
