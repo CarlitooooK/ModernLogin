@@ -1,62 +1,64 @@
 package com.example.creamlogin
 
-import android.content.Intent
+import androidx.fragment.app.Fragment
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.FragmentActivity
+import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
-import me.relex.circleindicator.CircleIndicator3
-
+import com.example.creamlogin.fragments.FormFragment
+import com.example.creamlogin.fragments.SearchFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.core.view.get
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var viewPager22: ViewPager2
-    private lateinit var indicator: CircleIndicator3
-    private lateinit var btnSignUp:Button
-
+    private lateinit var bottomAppBar: BottomNavigationView
+    private lateinit var viewPager2: ViewPager2
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
-        btnSignUp = findViewById(R.id.btnSignIn)
-
-
-        val pages = listOf(
-            PageItem(R.drawable.image1, "\"El cine no es un espejo para reflejar la realidad, sino un martillo para darle forma.\""),
-            PageItem(R.drawable.image2, "\"Cada historia proyectada es una chispa capaz de encender mil mundos en la mente del espectador.\""),
-            PageItem(R.drawable.image3, "\"Donde termina el lenguaje, comienza la imagen... y con ella, la emoción que transforma.\"")
-        )
-
-
-        viewPager22 = findViewById(R.id.viewPager)
-        indicator = findViewById(R.id.indicator)
-
-        indicator.setViewPager(viewPager22)
-        indicator.createIndicators(pages.size, 0) // Esto fuerza a dibujar los puntos
-        viewPager22.registerOnPageChangeCallback(object:ViewPager2.OnPageChangeCallback(){
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-                indicator.animatePageSelected(position)
-            }
-        })
-
-
-
-        viewPager22.adapter = ViewPagerAdapter(pages)
-
-
-
-        // Botones
-        findViewById<Button>(R.id.btnSignIn).setOnClickListener {
-            startActivity(Intent(this,LoginActivity::class.java))
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
         }
 
+        viewPager2 = findViewById(R.id.viewPager2)
+        bottomAppBar = findViewById(R.id.bottomNavigationView)
+
+        viewPager2.adapter = ScreenSlidePagerAdapter(this)
+
+        // Al seleccionar una opción en el BottomNav, cambia el ViewPager
+        bottomAppBar.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.search -> viewPager2.currentItem = 0
+                R.id.add -> viewPager2.currentItem = 1
+            }
+            true
+        }
+
+        // Al deslizar, actualiza el ítem seleccionado en el BottomNav
+        viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                bottomAppBar.menu[position].isChecked = true
+            }
+        })
+    }
+
+    private inner class ScreenSlidePagerAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
+        override fun getItemCount(): Int = 2
+        override fun createFragment(position: Int): Fragment = when (position) {
+            0 -> SearchFragment()
+            1 -> FormFragment()
+            else -> throw IllegalStateException("Posición inválida: $position")
+        }
+    }
 
 
     }
-
-}

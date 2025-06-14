@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contenedor"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:paddingTop="50dp"
+            android:layout_marginBottom="@dimen/mediumSpace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/background_card_view"
+            >
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:layout_marginTop="@dimen/mediumSpace"
+                android:fontFamily="@font/merriweathersubtitle"
+                android:text="@string/acervo_audiovisual_arpa_buap_2024"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tittle2"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/margin"
+                android:justificationMode="inter_word"
+                android:textAlignment="viewStart"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/contenedor"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginTop="@dimen/mediumSpace">
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_form"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/nombre"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_obra"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/titulo"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/campo2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/obra_basada"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_material_audivisual"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cortometraje"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mediometraje"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/largomatraje"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/clasificacion"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ficcion"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_ficcion"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/experimental"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/genero"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/genero_de_la_obra"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_animacion"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/tecnica_animacion"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/version"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/color"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blanco_negro"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/duracion"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:hint="@string/duracion_minutos"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/ano_estreno"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:hint="@string/anoEstreno"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/coproduccion"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/paises_coproduccion"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/idioma"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/idioma_original"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitulos"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/si"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/idioma_subtitulos"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/idioma_subtitulos_et"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/logline"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/describir_guion"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_sinopsis"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/extension"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/palabras_clave"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/ed_palabras_clave"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_locaciones"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/ed_locacion"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_clasificacion_publico"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b15"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c_apta_para_mayores_de_edad"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/d"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:button="@drawable/shape_checkbox"
+                android:padding="10dp"
+                android:fontFamily="@font/quicksandtext"
+                android:textSize="@dimen/smallText" />
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/sitio"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/sitio_oficial"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/redes_sociales"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/ed_redes_sociales"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/directivos"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/nombre_completo_directivo"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/persona_encargada"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/persona_encargada_semblanza"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/personas_implicadas"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/personas_implicada"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_telefono"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/nombre_y_telefono"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/enlistado_personas_implicadas"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/personas_y_puestos"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/reparto_nacionalidades"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/reparto_y_personalidades"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/integrantes_ARPA"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/reparto_y_personalidades"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/asignatura"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/asignatura_idea"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/participacion_eventos"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/eventos"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:text="@string/premios_reconocimientos"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:textSize="@dimen/smallText"/>
+
+            <EditText
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="@dimen/ediText_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/littleSpace"
+                android:background="@drawable/shape_editext"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:hint="@string/reconocimientos_y_premios"
+                android:textColorHint="@color/subtitle_color"
+                android:paddingStart="@dimen/littleSpace"
+                android:paddingEnd="0dp"
+                android:autofillHints="@null"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksandtext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandtext"
+                android:text="@string/terminos_y_condiciones"
+                android:textColor="@color/secondary_color"
+                android:textSize="@dimen/smallText"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/littleSpace"/>
+
+            <Button
+                android:id="@+id/btn_enviar"
+                android:layout_width="@dimen/buttom_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mediumSpace"
+                android:text="@string/enviar"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:fontFamily="@font/quicksandtext"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
