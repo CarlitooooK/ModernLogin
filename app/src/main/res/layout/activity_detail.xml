@@ -12,101 +12,231 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_height="@dimen/largoCard"
-        android:background="@drawable/background_card"
-        >
-        <TextView
-            android:id="@+id/tv_sinopsis"
-            android:layout_width="wrap_content"
+        android:background="@drawable/background_card">
+
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:textSize="@dimen/sinopsis"
-            android:textColor="@color/black"
-            android:text="@string/lorem_ipsum"
-            android:justificationMode="inter_word"
-            android:textAlignment="viewStart"
-            android:paddingStart="@dimen/mediumSpace"
-            android:paddingEnd="@dimen/mediumSpace"
-            android:layout_marginBottom="@dimen/bigSpace"
-            android:fontFamily="@font/quicksandtext"
-            android:textStyle="bold"
-            />
+            app:layout_constraintBottom_toBottomOf="parent">
 
-        <LinearLayout
-            android:id="@+id/contenedor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="@dimen/mediumSpace"
-            app:layout_constraintBottom_toTopOf="@id/tv_sinopsis"
-            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/secondary_color"
-                android:textSize="@dimen/mediumText"
-                android:textStyle="bold"
-                android:text="@string/autor"
-                android:layout_marginBottom="@dimen/littleSpace"
-                android:fontFamily="@font/merriweathersubtitle"
-                />
+                <TextView
+                    android:id="@+id/sinopsis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tv_sinopsis"
+                    android:text="@string/sinopsis"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/mediumSpace"
+                    android:fontFamily="@font/merriweathersubtitle"
+                    android:textSize="@dimen/mediumText"/>
 
-            <TextView
-                android:id="@+id/tv_full_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="@dimen/mediumText"
-                android:textStyle="bold"
-                android:text="@string/nombre_completo"
-                android:layout_marginBottom="@dimen/littleSpace"
-                android:paddingStart="@dimen/littleSpace"
-                android:paddingEnd="0dp"
-                android:fontFamily="@font/merriweathersubtitle"/>
+                <TextView
+                    android:id="@+id/tv_sinopsis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textSize="@dimen/sinopsis"
+                    android:textColor="@color/black"
+                    android:text="@string/lorem_ipsum"
+                    android:justificationMode="inter_word"
+                    android:textAlignment="viewStart"
+                    android:paddingStart="@dimen/mediumSpace"
+                    android:paddingEnd="@dimen/mediumSpace"
+                    android:layout_marginBottom="@dimen/bigSpace"
+                    android:fontFamily="@font/quicksandtext"
+                    android:textStyle="bold"
+                    />
 
-        </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/contenedor_autor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/mediumSpace"
+                    app:layout_constraintBottom_toTopOf="@id/contenerdor_idioma"
+                    >
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/tag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/contenedor"
-            android:layout_margin="@dimen/littleSpace"
-            android:backgroundTint="@color/text_color"
-            app:cardCornerRadius="@dimen/littleSpace"
-            app:cardElevation="@dimen/appElevation">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="@dimen/mediumText"
+                        android:textStyle="bold"
+                        android:text="@string/autor"
+                        android:layout_marginBottom="@dimen/littleSpace"
+                        android:fontFamily="@font/merriweathersubtitle"
+                        />
 
-            <TextView
-                android:id="@+id/tv_etiqueta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/mediumText"
-                android:textColor="@color/black"
-                android:text="@string/etiqueta"
-                android:paddingEnd="@dimen/paddingEtiqueta"
-                android:paddingStart="@dimen/paddingEtiqueta"
-                android:fontFamily="@font/merriweathersubtitle"/>
+                    <TextView
+                        android:id="@+id/tv_full_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/mediumText"
+                        android:textStyle="bold"
+                        android:text="@string/nombre_completo"
+                        android:paddingStart="@dimen/littleSpace"
+                        android:paddingEnd="0dp"
+                        android:fontFamily="@font/merriweathersubtitle"/>
 
-        </androidx.cardview.widget.CardView>
+                </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_titulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/tag"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:text="@string/titulo_bonito_aqu"
-            android:textSize="@dimen/tittle"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginBottom="@dimen/littleSpace"
-            android:fontFamily="@font/seriftitle" />
+                <LinearLayout
+                    android:id="@+id/contenerdor_idioma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/mediumSpace"
+                    app:layout_constraintBottom_toTopOf="@id/contenerdor_duracion"
+                    >
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="@dimen/mediumText"
+                        android:textStyle="bold"
+                        android:text="@string/tv_idioma"
+                        android:layout_marginBottom="@dimen/littleSpace"
+                        android:fontFamily="@font/merriweathersubtitle"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_idioma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/mediumText"
+                        android:textStyle="bold"
+                        android:text="@string/tv_idioma_original"
+                        android:paddingStart="@dimen/littleSpace"
+                        android:paddingEnd="0dp"
+                        android:fontFamily="@font/merriweathersubtitle"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contenerdor_duracion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/mediumSpace"
+                    app:layout_constraintBottom_toTopOf="@id/contenerdor_link"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="@dimen/mediumText"
+                        android:textStyle="bold"
+                        android:text="@string/tv_duracion"
+                        android:layout_marginBottom="@dimen/littleSpace"
+                        android:fontFamily="@font/merriweathersubtitle"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_duracion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/mediumText"
+                        android:textStyle="bold"
+                        android:text="@string/duracion_en_minutos"
+                        android:paddingStart="@dimen/littleSpace"
+                        android:paddingEnd="0dp"
+                        android:fontFamily="@font/merriweathersubtitle"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contenerdor_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/mediumSpace"
+                    app:layout_constraintBottom_toTopOf="@id/sinopsis"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="@dimen/mediumText"
+                        android:textStyle="bold"
+                        android:text="@string/tv_link_recurso"
+                        android:layout_marginBottom="@dimen/littleSpace"
+                        android:fontFamily="@font/merriweathersubtitle"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/mediumText"
+                        android:textStyle="bold"
+                        android:text="@string/link_aqui"
+                        android:paddingStart="@dimen/littleSpace"
+                        android:paddingEnd="0dp"
+                        android:fontFamily="@font/merriweathersubtitle"/>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/contenedor_autor"
+                    android:layout_marginStart="@dimen/mediumSpace"
+                    android:layout_marginBottom="@dimen/littleSpace"
+                    android:backgroundTint="@color/text_color"
+                    app:cardCornerRadius="@dimen/littleSpace"
+                    app:cardElevation="@dimen/appElevation">
+
+                    <TextView
+                        android:id="@+id/tv_etiqueta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mediumText"
+                        android:textColor="@color/background"
+                        android:textStyle="bold"
+                        android:text="@string/etiqueta"
+                        android:paddingEnd="@dimen/paddingEtiqueta"
+                        android:paddingStart="@dimen/paddingEtiqueta"
+                        android:fontFamily="@font/merriweathersubtitle"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tag"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/titulo_bonito_aqu"
+                    android:textSize="@dimen/tittle"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/littleSpace"
+                    android:paddingTop="32dp"
+                    android:fontFamily="@font/seriftitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <ImageView
         android:layout_width="@dimen/anchoImagen"

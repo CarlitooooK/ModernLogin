@@ -101,10 +101,10 @@
     <string name="eventos">Eventos</string>
     <string name="premios_reconocimientos">30. Premios y reconocimientos adicionales (becas, apoyos, etc)</string>
     <string name="reconocimientos_y_premios">Reconocimientos y premios</string>
-    <string name="buscar_multimedia">Buscar Multimedia</string>
-    <string name="duracion_media">Duracion Media</string>
-    <string name="duracion_corta">Duracion Corta</string>
-    <string name="duracion_larga">Duracion Larga</string>
-    <string name="t_tulo_ejemplo">Titulo Ejemplo</string>
-    <string name="a_adir_recurso">Añadir Recurso</string>
+    <string name="tv_idioma">Idioma : </string>
+    <string name="tv_idioma_original">Idioma original</string>
+    <string name="tv_duracion">Duración :</string>
+    <string name="duracion_en_minutos">Duracion en minutos</string>
+    <string name="tv_link_recurso">Link Recurso :</string>
+    <string name="link_aqui">Link aquí</string>
 </resources>
