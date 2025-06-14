@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background_db_card"
+        android:padding="16dp">
 
+        <!-- Imagen opcional -->
+        <ImageView
+            android:id="@+id/imgPortada"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/portada_de_la_pel_cula" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:fontFamily="@font/seriftitle"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/t_tulo_de_ejemplo"/>
+
+        <!-- Clasificación -->
+        <TextView
+            android:id="@+id/txtClasifiacion"
+            android:textColor="@color/white"
+            android:fontFamily="@font/merriweathersubtitle"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clasificaci_n_pg_13"/>
+
+        <!-- Género -->
+        <TextView
+            android:id="@+id/txtGenero"
+            android:fontFamily="@font/merriweathersubtitle"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/g_nero_animaci_n_aventura"/>
+
+        <!-- Sinopsis -->
+        <TextView
+            android:id="@+id/txtSinopsis"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksandtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:text="@string/aqu_va_una_sinopsis_larga_que_puede_provenir_de_la_api"/>
+
+        <!-- Duración -->
+        <TextView
+            android:id="@+id/txtDuracion"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/merriweathersubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/duraci_n_1h_45m"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

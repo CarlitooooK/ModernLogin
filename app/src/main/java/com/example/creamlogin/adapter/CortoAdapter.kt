@@ -22,7 +22,7 @@ class CortoAdapter(private var lista: List<Corto>) : RecyclerView.Adapter<CortoA
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CortoViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_titulo, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_previsualizer, parent, false)
         return CortoViewHolder(view)
     }
 

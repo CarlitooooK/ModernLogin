@@ -107,4 +107,18 @@
     <string name="duracion_en_minutos">Duracion en minutos</string>
     <string name="tv_link_recurso">Link Recurso :</string>
     <string name="link_aqui">Link aquí</string>
+    <string name="buscar_multimedia">Buscar Multimedia</string>
+    <string name="duracion_larga">Duracion Larga</string>
+    <string name="duracion_corta">Duracion Corta</string>
+    <string name="duracion_media">Duracion Media</string>
+    <string name="a_adir_recurso">Añadir Recurso</string>
+    <string name="duracionn">Duracion:</string>
+    <string name="tiempo">Tiempo</string>
+    <string name="portada_de_la_pel_cula">Portada de la película</string>
+    <string name="t_tulo_de_ejemplo">Título de Ejemplo</string>
+    <string name="clasificaci_n_pg_13">Clasificación: PG-13</string>
+    <string name="g_nero_animaci_n_aventura">Género: Animación, Aventura</string>
+    <string name="aqu_va_una_sinopsis_larga_que_puede_provenir_de_la_api">Aquí va una sinopsis larga que puede provenir de la API.</string>
+    <string name="duraci_n_1h_45m">Duración: 1h 45m</string>
+    <string name="filtros">Filtros de Busqueda</string>
 </resources>

@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/searchBAR"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="230dp"
         android:paddingTop="40dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,6 +52,18 @@
             app:layout_constraintTop_toTopOf="@id/searchView">
         </ImageView>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/merriweathersubtitle"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@id/searchView"
+            android:text="@string/filtros">
+        </TextView>
+
         <HorizontalScrollView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -62,12 +74,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="10dp">
 
+
             <com.google.android.material.chip.ChipGroup
                 app:layout_constraintTop_toBottomOf="@id/searchView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:singleSelection="false"
                 app:selectionRequired="false"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="40dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
