@@ -5,18 +5,32 @@ import android.annotation.SuppressLint
 import android.graphics.Color
 import android.graphics.PorterDuff
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.creamlogin.adapter.TituloAdapter
+import com.example.creamlogin.retrofit.RetrofitInstance
+import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 
 class SearchActivity:AppCompatActivity() {
     private lateinit var backIcon: ImageView
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: TituloAdapter
 
+    @OptIn(DelicateCoroutinesApi::class)
     @SuppressLint("SoonBlockedPrivateApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +43,37 @@ class SearchActivity:AppCompatActivity() {
             finish()
         }
 
+        searchViewPersonalize()
+
+        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+
+        lifecycleScope.launch {
+            try {
+                val titulos = RetrofitInstance.api.getTitulos()
+
+                // 🔍 Imprimir los títulos en Logcat
+                titulos.forEach {
+                    Log.d("API", "→ ${it.tituloOriginal}")
+                }
+
+                adapter = TituloAdapter(titulos)
+                recyclerView.adapter = adapter
+
+            } catch (e: Exception) {
+                Toast.makeText(this@SearchActivity, "Error al obtener los títulos", Toast.LENGTH_SHORT).show()
+                e.printStackTrace()
+            }
+        }
+
+
+
+
+
+    }
+
+    @SuppressLint("SoonBlockedPrivateApi")
+    private fun searchViewPersonalize() {
         val searchView = findViewById<SearchView>(R.id.searchView)
 
 // Obtener el EditText interno para texto y hint
@@ -54,12 +99,5 @@ class SearchActivity:AppCompatActivity() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-
-
-
-
-
-
-
     }
 }
